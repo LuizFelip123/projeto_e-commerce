@@ -1,0 +1,150 @@
+
+body{
+ margin: 0;
+ padding: 0;
+
+}
+
+main{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+
+    background-color: #dcdcdc;
+
+}
+.container{
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr ));
+    grid-gap: 20px;
+    padding: 20px;
+}
+.container .card{
+    width: 100%;
+    background: #fff;
+
+}
+
+
+.container .card .imgBx{
+position: relative;
+width: 100%;
+height: 310px;
+overflow: hidden;
+}
+
+.container .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.container .card:hover .imgBx img{
+    transform: scale(1.5);
+
+}
+
+.container .card .content{
+
+    padding: 10px;
+
+}
+
+.container .card .content .productName{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin: 5px 0;
+
+
+}
+
+.container .card .content .price_rating{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+
+.container .card .content .price_rating h2{
+    font-size: 20px;
+    color: #ff2020;
+    font-weight: 500;
+}
+
+.container .card .content .price_rating .fa{
+
+    color: #ffd513;
+}
+
+.action{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.action li{
+    position: relative;
+    width: 40px;
+    background: #fff;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 4px;
+    cursor: pointer;
+    transform: translateY(60px);
+
+}
+
+.action li:hover{
+    background: #ff2020;
+    color:#fff;
+
+}
+
+
+nav {
+
+    width: 100%;
+
+    display: flex;
+
+    position: fixed;
+
+    background-color: rgb(7, 222, 250);
+
+    z-index: 99;
+
+}
+
+nav a {
+
+    color: #fff;
+
+    margin: auto 20px auto 40px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+nav li {
+
+    float: left;
+
+    list-style: none;
+
+    margin-left: 20px;
+
+}
